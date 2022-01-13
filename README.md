@@ -1,33 +1,16 @@
-# hubber-app
+# branch-protection-app
 
-> A GitHub App built with [Probot](https://github.com/probot/probot) that A Probot app
-
-## Setup
-
+## Setup  
+Navigate to the project root and install the required dependencies: 
 ```sh
 # Install dependencies
 npm install
-
+```
+Once completed, start up the web service to begin listening for messages from the GitHub App: 
+```sh
 # Run the bot
 npm start
 ```
+Create a new repository in BrytBoyCorp (where the protector-app GitHub App is installed).  
 
-## Docker
-
-```sh
-# 1. Build container
-docker build -t hubber-app .
-
-# 2. Start container
-docker run -e APP_ID=<app-id> -e PRIVATE_KEY=<pem-value> hubber-app
-```
-
-## Contributing
-
-If you have suggestions for how hubber-app could be improved, or want to report a bug, open an issue! We'd love all and any contributions.
-
-For more, check out the [Contributing Guide](CONTRIBUTING.md).
-
-## License
-
-[ISC](LICENSE) © 2022 Bryton Javiérre Herlong <undefined>
+Validate that a new branch protection rule has been added to the repository and that an issue describing the changes has been created as well.
